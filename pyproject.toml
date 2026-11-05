@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sqlite-trigger-effect-ledger"
+version = "0.1.0a1"
+description = "FR: Observer les effets indirects des déclencheurs SQLite | EN: Observe indirect SQLite trigger effects | ES: Observar efectos indirectos de disparadores SQLite"
+requires-python = ">=3.11"
+license = "MIT"
+
+[project.scripts]
+sqlite-trigger-effect-ledger = "sqlite_trigger_effect_ledger.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["sqlite_trigger_effect_ledger*"]
